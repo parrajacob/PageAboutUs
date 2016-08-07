@@ -1,9 +1,8 @@
-# jsapp
+# Page About Us
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.15.1.
+This website is a tool for business owners or anyone to build a about us page without having to paying big. 
 
-## Build & development
+## Build & Development
 
 Run `grunt` for building and `grunt serve` for preview.
 
