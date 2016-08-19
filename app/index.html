@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>Page About Us</title>
@@ -15,30 +14,26 @@
     <![endif]-->
     <!-- Add your site or application content here -->
     <div class="navigation">
-        <div class="container">
-            <div class="row">
-                <nav class="navbar navbar-default" role="navigation">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                    </div> <a class="navbar-brand" href="#/">Page About Us</a>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-left">
-                            <li><a href="#/">Get Started</a></li>
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#/">Login</a></li>
-                        </ul>
-                    </div>
-                </nav>
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#/">Page About Us</a> </div>
+                <div id="" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#/">Get Started</a></li>
+                        <li><a href="#/login">Login</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
             </div>
-        </div>
+            <!--/.container-fluid -->
+        </nav>
     </div>
+    <a href="#" class="goToTop btn btn-info btn-lg" style="display:none;"> <span class="glyphicon glyphicon-circle-arrow-up fa-5x"></span> </a>
     <div class="container">
-        <div ng-view=""></div>
+        <div ng-view="" class="angularContent" id="angular"></div>
     </div>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-12 right-border">
@@ -65,9 +60,8 @@
                         <div class="navigation">
                             <h2 class="footer-title">Navigation</h2>
                             <ul class="list-unstyled">
-                                <li><a href="#/" title="">Home</a></li>
                                 <li><a href="#/" title="">Get Started</a></li>
-                                <li><a href="#/" title="">Login</a></li>
+                                <li><a href="#/login" title="">Login</a></li>
                             </ul>
                         </div>
                     </div>
@@ -92,8 +86,8 @@
     <script src="assets/libs/angular-touch/angular-touch.js"></script>
     <script src="assets/libs/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="modules/app.js"></script>
+    <script src="assets/js/main.js"></script>
     <script src="modules/components/home/homeController.js"></script>
-    <script src="modules/components/about/aboutController.js"></script>
+    <script src="modules/components/login/loginController.js"></script>
 </body>
-
 </html>
