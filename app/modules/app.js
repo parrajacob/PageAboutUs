@@ -22,6 +22,10 @@ angular.module('PageAboutUsApp', [
         templateUrl: 'modules/components/login/loginView.html'
         , controller: 'LoginCtrl'
         , controllerAs: 'login'
+    }).when('/register', {
+        templateUrl: 'modules/components/register/registerView.html'
+        , controller: 'RegisterCtrl'
+        , controllerAs: 'register'
     }).otherwise({
         redirectTo: '/'
     });

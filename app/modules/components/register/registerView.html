@@ -1,1 +1,44 @@
-<p>This is the about view.</p>
+<div class="registerView">
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                
+                <h3>Sign Up</h3>
+                
+                <p>Enter your information below to get started.</p>
+                
+                <br>
+                
+                <form name="form" ng-submit="register()" role="form">
+                    <div class="form-group">
+                        <label for="username">Name</label> <i class="fa fa-key"></i>
+                        <input type="text" name="name" id="name" class="form-control" ng-model="name" required /> </div>
+                    <div class="form-group">
+                        <label for="username">Username</label> <i class="fa fa-key"></i>
+                        <input type="text" name="username" id="username" class="form-control" ng-model="username" required /> </div>
+                    <div class="form-group">
+                        <label for="password">Password</label> <i class="fa fa-lock"></i>
+                        <input type="password" name="password" id="password" class="form-control" ng-model="password" required /> </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Re-Enter Password</label> <i class="fa fa-lock"></i>
+                        <input type="password" name="password2" id="password2" class="form-control" ng-model="password2" required /> </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn btn-danger">Register</button> <img ng-if="dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" /> <a class="link" href="#/login">Already have an account?</a>  </div>
+                    
+                       
+                    
+                </form>
+                
+                <br>
+                <br>
+                <br>
+                
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</div>

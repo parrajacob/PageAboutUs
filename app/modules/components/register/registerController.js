@@ -4,11 +4,11 @@
  * @ngdoc function
  * @name jsappApp.controller:AboutCtrl
  * @description
- * # AboutCtrl
+ * # RegisterCtrl
  * Controller of the jsappApp
  */
 angular.module('PageAboutUsApp')
-  .controller('AboutCtrl', function () {
+  .controller('RegisterCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
